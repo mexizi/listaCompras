@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lista de Compras</string>
+    <string name="arquivo">/lista.txt</string>
+</resources>

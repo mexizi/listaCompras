@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="1"
+            android:background="#787878">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="CLR"
+                android:id="@+id/clr_button"
+                android:onClick="clearLista" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:id="@+id/editText"
+                android:hint="Nome do produto"
+                android:maxLines="1"
+                android:background="#ffffff"
+                android:singleLine="true"
+                android:layout_weight="1.00" />
+
+
+            <Button
+                android:layout_width="52dp"
+                android:layout_height="60dp"
+                android:id="@+id/add_button"
+                android:text="Add"
+                android:onClick="adcionarItemLista" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:contextClickable="false"
+            android:longClickable="true" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="right" />
+
+</LinearLayout>
